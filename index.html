@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+	
+
+    <div class="container">
+
+		<div id="displayError"></div>
+
+		<div class="display">
+			<input type="text" name="result" id="inputField" value="0">
+		</div>							
+	
+		<table>
+
+      			<tbody>
+				<tr class="operator">
+					
+					<td onclick="clickedChar(this)">AC</td>
+					<td onclick="clickedChar(this)">/</td>
+					<td onclick="clickedChar(this)">*</td>
+					<td onclick="clickedChar(this)">-</td>
+          			        			
+				</tr>
+				<tr>
+			    	<td onclick="clickedChar(this)">7</td>
+			    	<td onclick="clickedChar(this)">8</td>
+					<td onclick="clickedChar(this)">9</td>
+					<td class="operator" rowspan="2" onclick="clickedChar(this)">+</td>
+				</tr>
+				<tr>
+					<td onclick="clickedChar(this)">4</td>
+					<td onclick="clickedChar(this)">5</td>
+					<td onclick="clickedChar(this)">6</td>
+				</tr>
+				<tr>
+      				<td onclick="clickedChar(this)">1</td>
+					<td onclick="clickedChar(this)">2</td>
+					<td onclick="clickedChar(this)">3</td>
+					<td class="operator" rowspan="2" onclick="clickedChar(this)">=</td>
+				</tr>
+				<tr>	
+					<td colspan="2" onclick="clickedChar(this)">0</td>
+					<td onclick="clickedChar(this)">.</td>			
+					
+				</tr>	
+			</tbody>
+		</table>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
