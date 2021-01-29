@@ -66,3 +66,81 @@ td:active{
 	background-color: chartreuse;
 	cursor: pointer;
 }
+
+.display2 {
+	background-color:green;
+	width: 100%;
+	height: 50px;
+	border-radius: 20px;
+	margin: auto;	
+	font-size: 50px;
+	color: #000000;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.container2 {
+	width: 100%;
+	display: flex;
+}
+
+#firstValue, #secoundValue {
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+
+}
+#operand {
+	margin: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	color: yellow;
+}
+
+.operations {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15px;
+	
+}
+
+.operation {
+	width: 20%;
+	height: 30px;
+	background-color: yellow;
+	margin-right: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.calc {
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	background-color: turquoise;
+	margin-top: 30px;
+	font-size: 30px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.reset {
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	background-color:tomato;
+	margin-top: 30px;
+	font-size: 30px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.container2 input[type="text"]
+{
+	font-size:15px;
+}

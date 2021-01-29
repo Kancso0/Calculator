@@ -52,6 +52,26 @@
 				</tr>	
 			</tbody>
 		</table>
+
+		<hr>
+
+		<div class="display2" id="display2">0</div>
+
+		<div class="container2">
+			<input type="text" name="firstValue" id="firstValue" value="0">
+			<span id="operand">+</span>
+			<input type="text" name="secoundValue" id="secoundValue" value="0">
+		</div>
+
+		<div class="operations">
+			<div onclick="changeOperand(this)" class="operation" id="sum">+</div>
+			<div onclick="changeOperand(this)" class="operation" id="minus">-</div>
+			<div onclick="changeOperand(this)" class="operation" id="minus">/</div>
+			<div onclick="changeOperand(this)" class="operation" id="minus">*</div>
+		</div>
+		<div class="calc" onclick="doCalc()"> = </div>
+		<div class="reset" onclick="reset()"> AC </div>
+
     </div>
     <script src="calc.js"></script>
 </body>

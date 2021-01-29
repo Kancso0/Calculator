@@ -1,7 +1,6 @@
-var input = document.getElementById("inputField");
-var displayError = document.getElementById("displayError");
-
 function clickedChar(elem) {
+	let input = document.getElementById("inputField");
+	let displayError = document.getElementById("displayError");
 	
 	let char = elem.innerText;
 
@@ -28,4 +27,53 @@ function clickedChar(elem) {
 		}
 	}
 	
+}
+
+function changeOperand(obj) {
+	let currOperand = document.getElementById("operand");
+	currOperand.innerText = obj.innerText;
+}
+
+function doCalc() {
+
+	let firstValue = document.getElementById("firstValue").value;
+	let secoundValue = document.getElementById("secoundValue").value;
+
+	if(isNaN(firstValue) || isNaN(secoundValue)) {
+		displayError.innerText = "Pls type only numbers!";
+		displayError.style.display = "block";
+		return;
+
+	} else {
+		displayError.style.display = "none";
+		//parse
+		firstValue = parseFloat(document.getElementById("firstValue").value) || 0;
+		secoundValue = parseFloat(document.getElementById("secoundValue").value) || 0;
+	}
+
+	let currentOperand = document.getElementById("operand").innerText;
+	let result;
+	switch(currentOperand) {
+		case "+":
+			result = firstValue + secoundValue;
+			break;
+		case "-":
+			result = firstValue - secoundValue;
+			break;
+		case "/":
+			result = firstValue / secoundValue;
+			break;
+		case "*":
+			result = firstValue * secoundValue;
+			break;
+		default:
+			 
+	}
+
+	document.getElementById("display2").innerText = result;
+}
+
+
+function reset() {
+	document.getElementById("display2").innerText = 0;
 }
