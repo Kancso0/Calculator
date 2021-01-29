@@ -44,6 +44,11 @@ function doCalc() {
 		displayError.style.display = "block";
 		return;
 
+	} else if(firstValue == "" || secoundValue == ""){
+		displayError.innerText = "Pls fill all inputs!";
+		displayError.style.display = "block";
+		return;
+
 	} else {
 		displayError.style.display = "none";
 		//parse
